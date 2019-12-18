@@ -1,0 +1,21 @@
+.banner {
+  position: relative;
+  padding: 10rem 0;
+  background-image: url(../images/komplek-pemda-kuansing.jpg);
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  .container {
+    position: relative;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(-10deg, $primary, $warning);
+    opacity: .75;
+  }
+}

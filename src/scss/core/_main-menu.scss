@@ -1,0 +1,38 @@
+.main-menu {
+  .menu-icon {
+    margin: 0 .5rem;
+    width: 120px;
+    height: 120px;
+    color: $gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    img {
+      width: 40px;
+      margin-bottom: .75rem;
+    }
+    p {
+      font-size: .85rem;
+      margin: 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .main-menu {
+    .menu-icon {
+      width: 80px;
+      height: 80px;
+      img {
+        width: 30px;
+      }
+    }
+  }
+}

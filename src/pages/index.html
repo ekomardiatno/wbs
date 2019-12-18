@@ -1,0 +1,341 @@
+@@include('../inc/header.html', {"title": "Whistle Blowing System"})
+<!-- Banner -->
+<div class="banner">
+  <div class="container">
+    <h1 class="text-center text-uppercase font-weight-bold mb-4">Whistle Blowing System</h1>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-8">
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea dolorum sunt aliquid,
+          dolores officia rerum quaerat quas facilis culpa corporis dignissimos itaque recusandae aut distinctio, velit
+          sapiente veritatis dolore aspernatur repellendus temporibus eos? Veritatis veniam dignissimos libero ipsum
+          beatae consectetur, molestias rerum fuga quasi error, voluptate nemo dicta iure unde!</p>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center main-menu">
+      <a href="#" class="menu-icon url-to-element" element-id="#lapor">
+        <img src="./assets/images/icons/megaphone.png">
+        <p class="text-center">Laporkan dugaan</p>
+      </a>
+      <a href="#" class="menu-icon">
+        <img src="./assets/images/icons/report.png">
+        <p class="text-center">Lihat laporan</p>
+      </a>
+      <a href="#" class="menu-icon url-to-element" element-id="#contact">
+        <img src="./assets/images/icons/help-operator.png">
+        <p class="text-center">Hubungi kami</p>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- End Banner -->
+
+<!-- Main Section -->
+<div class="container">
+  <div class="main-section">
+    <div class="section" id="lapor">
+      <div class="head-section">
+        <h2 class="title-section">Laporkan Dugaan</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, repellat!</p>
+      </div>
+      <div class="body-section">
+        <form action="" method="POST" class="needs-validation" novalidate>
+          <div class="step-wizard">
+            <div class="nav-step">
+              <ul>
+                <li class="active">
+                  <div class="index-step">1</div>
+                  <div class="title-step">Persetujuan</div>
+                </li>
+                <li>
+                  <div class="index-step">2</div>
+                  <div class="title-step">Detail informasi</div>
+                </li>
+                <li>
+                  <div class="index-step">3</div>
+                  <div class="title-step">Pihak terlapor</div>
+                </li>
+                <li>
+                  <div class="index-step">4</div>
+                  <div class="title-step">Lampiran</div>
+                </li>
+                <li>
+                  <div class="index-step">5</div>
+                  <div class="title-step">Pelapor</div>
+                </li>
+              </ul>
+            </div>
+            <div class="container-step">
+              <div class="content-step active">
+                <h5>
+                  Dengan ini saya sebagai whistleblower Kota Bandung, melakukan pelaporan pada whistleblowing system dengan memberikan keterangan sebenar-benarnya, tanpa tekanan dari pihak manapun, tidak ada unsur menipu ataupun niatan memberikan keterangan palsu, bersedia memantau perkembangan pengaduan yang saya lakukan dan melakukan komunikasi dengan tim pengelola whistleblowing system apabila diperlukan.
+                </h5>
+              </div>
+              <div class="content-step">
+                <div class="form-group row">
+                  <label for="topik" class="col-sm-2 col-form-label">Topik laporan <small
+                      class="text-danger">*</small></label>
+                  <div class="col-sm-10">
+                    <input type="text" required name="topik" class="form-control" id="topik"
+                      placeholder="Topik laporan">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="tanggal_kejadian" class="col-sm-2 col-form-label">Tanggal kejadian <small
+                      class="text-danger">*</small></label>
+                  <div class="col-sm-10">
+                    <input type="text" required name="tanggal_kejadian" class="form-control" id="tanggal_kejadian"
+                      placeholder="Tanggal kejadian">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="tempat_kejadian" class="col-sm-2 col-form-label">Tempat kejadian <small
+                      class="text-danger">*</small></label>
+                  <div class="col-sm-10">
+                    <select id="tempat_kejadian" required class="form-control" name="tempat_kejadian"
+                      class="form-control">
+                      <option selected value="">Pilih salah satu</option>
+                      <option value="1">Tempat kerja</option>
+                      <option value="2">Loket layanan publik</option>
+                      <option value="3">Lainnya</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="uraian_kejadian" class="col-sm-2 col-form-label">Uraian kejadian <small
+                      class="text-danger">*</small></label>
+                  <div class="col-sm-10">
+                    <textarea required name="uraian_kejadian" class="form-control" id="uraian_kejadian"
+                      placeholder="Uraian kejadian"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="jumlah_rupiah" class="col-sm-2 col-form-label">Jumlah rupiah</label>
+                  <div class="col-sm-10">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Rp</div>
+                      </div>
+                      <input type="text" name="jumlah_rupiah" class="form-control" id="jumlah_rupiah"
+                        placeholder="Jumlah rupiah">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-step">
+                <div class="table-responsive">
+                  <table class="table table-sm table-borderless data-dinamis">
+                    <thead class="vertical-middle">
+                      <tr>
+                        <th>No.</th>
+                        <th>Nama <small class="text-danger">*</small></th>
+                        <th>NIP</th>
+                        <th>Jabatan</th>
+                        <th>Unit kerja <small class="text-danger">*</small></th>
+                        <th><button type="button" class="btn btn-primary btn-sm rounded-circle tambah-data"><span
+                              class="fas fa-plus"></span></button></th>
+                      </tr>
+                    </thead>
+                    <tbody class="vertical-middle">
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <input required type="text" class="form-control form-control-sm form-min-w150px-xs">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control form-control-sm form-min-w150px-xs">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control form-control-sm form-min-w150px-xs">
+                        </td>
+                        <td>
+                          <input required type="text" class="form-control form-control-sm form-min-w150px-xs">
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-danger btn-sm rounded-circle hapus-data"><span
+                              class="fas fa-minus"></span></button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="content-step">
+                <div class="table-responsive">
+                  <table class="table table-sm table-borderless data-dinamis">
+                    <thead class="vertical-middle">
+                      <tr>
+                        <th>No.</th>
+                        <th>Nama dokumen</th>
+                        <th>Berkas dokumen</th>
+                        <th><button type="button" class="btn btn-primary btn-sm rounded-circle tambah-data"><span
+                              class="fas fa-plus"></span></button></th>
+                      </tr>
+                    </thead>
+                    <tbody class="vertical-middle">
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <input type="text" class="form-control form-control-sm form-min-w150px-xs">
+                        </td>
+                        <td>
+                          <div class="custom-file form-control-sm">
+                            <input type="file" class="custom-file-input form-min-w150px-xs" id="berkas">
+                            <label class="custom-file-label" for="berkas">Pilih berkas...</label>
+                          </div>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-danger btn-sm rounded-circle hapus-data"><span
+                              class="fas fa-minus"></span></button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="content-step">
+                <div class="form-group row">
+                  <label for="nama_pelapor" class="col-sm-2 col-form-label">Nama <small
+                      class="text-danger">*</small></label>
+                  <div class="col-sm-10">
+                    <input type="text" required name="nama_pelapor" class="form-control" id="nama_pelapor"
+                      placeholder="Nama anda">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="alamat_pelapor" class="col-sm-2 col-form-label">Alamat <small
+                      class="text-danger">*</small></label>
+                  <div class="col-sm-10">
+                    <textarea required name="alamat_pelapor" class="form-control" id="alamat_pelapor"
+                      placeholder="Alamat sesuai KTP"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="email" class="col-sm-2 col-form-label">Email <small
+                      class="text-danger">*</small></label>
+                  <div class="col-sm-10">
+                    <input type="text" required name="email" class="form-control" id="email"
+                      placeholder="Alamat email aktif">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="no_hp" class="col-sm-2 col-form-label">No. Handphone <small
+                      class="text-danger">*</small></label>
+                  <div class="col-sm-10">
+                    <input type="text" required name="no_hp" class="form-control" id="no_hp"
+                      placeholder="No. Handphone yang bisa dihubungi">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="action-step">
+              <div class="content-action active">
+                <div class="d-flex flex-row flex-fill pr-2">
+                  <div class="custom-control custom-checkbox">
+                    <input required type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Saya mengerti dan setuju dengan penjelasan di atas.</label>
+                    <div class="invalid-feedback">Maaf, anda harus menyetujui pernyataan di atas untuk melanjutkan.</div>
+                  </div>
+                </div>
+                <div class="d-flex flex-row flex-fill justify-content-end">
+                  <button type="button" class="btn btn-primary next"><span class="fas fa-pen-alt"></span> <span
+                      class="hide-xs">Buat laporan</span></button>
+                </div>
+              </div>
+              <div class="content-action">
+                <div class="d-flex flex-row flex-fill pr-2">
+                  <p class="m-0"><span class="text-danger">*</span> Kolom isian wajib diisi</p>
+                </div>
+                <div class="d-flex flex-row flex-fill justify-content-end">
+                  <button type="button" class="btn mr-2 btn-primary prev"><span class="fas fa-chevron-left hide-md"></span> <span
+                      class="hide-xs">Sebelumnya</span></button>
+                  <button type="button" class="btn btn-primary next"><span class="fas fa-chevron-right hide-md"></span> <span
+                      class="hide-xs">Selanjutnya</span></button>
+                </div>
+              </div>
+              <div class="content-action">
+                <div class="d-flex flex-row flex-fill pr-2">
+                  <p class="m-0"><span class="text-danger">*</span> Kolom isian wajib diisi</p>
+                </div>
+                <div class="d-flex flex-row flex-fill justify-content-end">
+                  <button type="button" class="btn mr-2 btn-primary prev"><span class="fas fa-chevron-left hide-md"></span> <span
+                      class="hide-xs">Sebelumnya</span></button>
+                  <button type="button" class="btn btn-primary next"><span class="fas fa-chevron-right hide-md"></span> <span
+                      class="hide-xs">Selanjutnya</span></button>
+                </div>
+              </div>
+              <div class="content-action">
+                <div class="d-flex flex-row flex-fill pr-2">
+                  <p class="m-0"><span class="text-danger">*</span> Kolom isian wajib diisi</p>
+                </div>
+                <div class="d-flex flex-row flex-fill justify-content-end">
+                  <button type="button" class="btn mr-2 btn-primary prev"><span class="fas fa-chevron-left hide-md"></span> <span
+                      class="hide-xs">Sebelumnya</span></button>
+                  <button type="button" class="btn btn-primary next"><span class="fas fa-chevron-right hide-md"></span> <span
+                      class="hide-xs">Selanjutnya</span></button>
+                </div>
+              </div>
+              <div class="content-action">
+                <div class="d-flex flex-row flex-fill pr-2">
+                  <p class="m-0"><span class="text-danger">*</span> Kolom isian wajib diisi</p>
+                </div>
+                <div class="d-flex flex-row flex-fill justify-content-end">
+                  <button type="button" class="btn mr-2 btn-primary prev"><span class="fas fa-chevron-left hide-md"></span> <span
+                      class="hide-xs">Sebelumnya</span></button>
+                  <button type="submit" class="btn btn-primary"><span class="fas fa-paper-plane"></span>
+                    <span class="hide-xs">Kirim laporan</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <div class="section" id="contact">
+      <div class="head-section">
+        <h2 class="title-section">Hubungi kami</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, repellat!</p>
+      </div>
+      <div class="body-section">
+        <form action="" method="post" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <div class="form-group row">
+              <label for="nama" class="col-sm-2 col-form-label">Nama <small
+                  class="text-danger">*</small></label>
+              <div class="col-sm-10">
+                <input type="text" required name="nama" class="form-control" id="nama"
+                  placeholder="Nama anda">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-sm-2 col-form-label">Email <small
+                  class="text-danger">*</small></label>
+              <div class="col-sm-10">
+                <input type="text" required name="email" class="form-control" id="email"
+                  placeholder="Email anda">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="pesan" class="col-sm-2 col-form-label">Pesan <small
+                  class="text-danger">*</small></label>
+              <div class="col-sm-10">
+                <textarea required name="pesan" class="form-control" id="pesan"
+                  placeholder="Pesan anda"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row align-items-center">
+            <div class="d-flex flex-fill">
+              <span class="text-danger">*</span> Kolom isian wajib diisi
+            </div>
+            <div class="d-flex flex-fill justify-content-end">
+              <button type="submit" class="btn btn-primary"><span class="fas fa-paper-plane"></span> Kirim</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Main Section -->
+@@include('../inc/footer.html')

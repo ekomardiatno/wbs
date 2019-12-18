@@ -1,0 +1,9 @@
+thead, tbody {
+  &.vertical-middle {
+    tr {
+      th, td {
+        vertical-align: middle;
+      }
+    }
+  }
+}
